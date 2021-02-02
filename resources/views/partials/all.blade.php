@@ -9,7 +9,7 @@
                     {{-- <img src="..." class="card-img-top" alt="..."> --}}
                     <div class="card-body">
                       <h5 class="card-title">{{$member->nom}}</h5>
-                      <h6 class="card-subtitle mb-2 ">{{$member->genre}}</h6>
+                      <h6 class="card-subtitle mb-2 {{$member->genre === "Femme" ? 'text-danger' : "text-success"}}">{{$member->genre}}</h6>
                       <p class="card-text text-muted">{{$member->age}} ans</p>
                     </div>
                   </div>
