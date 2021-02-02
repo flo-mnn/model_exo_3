@@ -1,0 +1,9 @@
+@extends('template.main')
+@section('content')
+    @include('partials.all')
+    @include('partials.men')
+    @include('partials.women')
+    @include('partials.young_men')
+    @include('partials.young_women')
+    @include('partials.all_others')
+@endsection
