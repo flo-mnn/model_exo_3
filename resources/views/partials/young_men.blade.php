@@ -1,6 +1,6 @@
 <section class="container px-5 py-3 my-5 rounded" id="youngMen">
     <h1 class="p-5 my-5 bg-primary text-white rounded">
-        Tous les hommes entre 18 et 24 ans
+        Tous les hommes entre 18 et 24 ans ({{count($members->where('genre','Homme')->where('age','>=',18)->where('age','<=',24))}});
     </h1>
     <div class="row">
         @foreach ($members as $member)

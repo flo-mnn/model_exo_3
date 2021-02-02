@@ -1,6 +1,6 @@
 <section class="container px-5 py-3 my-5 rounded" id="youngWomen">
     <h1 class="p-5 my-5 bg-warning text-white rounded">
-        Toutes les femmes entre 18 et 24 ans
+        Toutes les femmes entre 18 et 24 ans ({{count($members->where('genre','Femme')->WhereBetween('age',[18,24]))}})
     </h1>
     <div class="row">
         @foreach ($members as $member)

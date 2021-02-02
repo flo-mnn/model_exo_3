@@ -1,6 +1,6 @@
 <section class="container px-5 py-3 my-5 rounded" id="others">
     <h1 class="p-5 my-5 bg-info text-white rounded">
-        Tou.te.s les membres -18 ou +24 ans
+        Tou.te.s les membres -18 ou +24 ans ({{count($members->whereNotBetween('age',[18,24]))}})
     </h1>
     <div class="row">
         @foreach ($members as $member)
